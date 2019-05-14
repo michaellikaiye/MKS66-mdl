@@ -1,0 +1,23 @@
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+
+push
+move 250 250 0
+rotate x 40
+scale 1.25 1.25 1.25
+sphere shiny_teal 0 0 0 50
+torus dull_yellow -87 0 0 30 60
+torus dull_yellow 43 0 75 30 60
+torus dull_yellow 43 0 -75 30 60
+display
+save img0.png
+
+clear
+rotate y 6
+sphere dull_yellow 100 0 0 50
+torus dull_yellow -87 0 0 30 60
+torus dull_yellow 43 0 75 30 60
+torus dull_yellow 43 0 -75 30 60
+display
+save img1.png
